@@ -3,8 +3,9 @@
 
 
 #Стек на Python
-st=
+st=[]
 st.append('2023')
 st.append('2024')
 st.append('2025')
+
 
