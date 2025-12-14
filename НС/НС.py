@@ -123,7 +123,7 @@ class NeuralStyleTransfer:
                        learning_rate=0.02, show_every=50):
         """
         Основной цикл оптимизации (Adam).
-        Плюс расчет pseudo-accuracy = (loss_0 - loss_t) / loss_0.
+        Плюс расчет accuracy = (loss_0 - loss_t) / loss_0.
         """
         style_features, content_features = self._get_feature_representations(
             content_image, style_image
@@ -241,4 +241,5 @@ plt.figure(figsize=(5, 5))
 plt.imshow(final_img)
 plt.axis('off')
 plt.title('Итоговое стилизованное изображение')
+
 plt.show()
